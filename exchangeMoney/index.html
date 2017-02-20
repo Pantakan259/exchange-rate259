@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>โปรแกรมคำนวณอัตราแลกเปลี่ยนเงินตราต่างประเทศ</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<style type="text/css">
+<!--
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color:#252525;
+    font-size: 14px;
+}
+-->
+</style></head>
+
+<body>
+    <div class="option animated bounce" style="width: 550px; height: 300px; background-color: white; margin: 0 auto; margin-top: 50px; border-radius: 10px;" > 
+    <form action="process.php" method="post">
+<table width="500" border="0" align="center">
+    <tr>
+      <td colspan="2">
+      <div  align="center" style="margin-top: 45px; color: black; font-size: 18px;"><h3>โปรแกรมคำนวณอัตราแลกเปลี่ยนเงินตราต่างประเทศ</h3></div></td>
+    </tr>
+    <tr>
+      <td width="150"><div align="right">จำนวนเงิน : </div></td>
+      <td width="212"><input type="text" name="money" size="22" maxlength="100" style="height: 20px; border-radius: 4px;" />  บาทไทย</td>
+    </tr>     
+    <tr>
+      <td width="150"><div align="right" >เลือกสกุลเงิน : </div></td>
+      <td width="212"><select name="coin" style="height: 20px; border-radius: 4px; margin-top: 12px;">
+                <option value="11" >สหดอลลาร์สหรัฐอเมริกา (USD)</option>
+                <option value="12" >เกาหลีวอน (KRW)</option>
+                <!-- <option value="13" >เงินรูปีของอินเดีย (INR)</option> -->
+                <option value="14" >เงินเยนของญี่ปุ่น (JPY)</option>                 
+              </select></td>
+    </tr>  
+    <tr>
+
+      <td colspan="2"> <div align="center"><input class="a" type="submit" value="คำนวณ" 
+      style="width: 300px;
+      font-size: 16px;
+    background-color: #a1c4fd;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #888888;
+    " />
+
+    </div></td>
+    </tr>   
+    <tr>
+      <td colspan="2" style="font-size:14px; color:#F00;" align="center"></td>
+    </tr>
+  </table>
+<div align="center"></div>
+</div>
+</body>
+</html>
